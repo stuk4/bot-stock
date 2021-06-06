@@ -1,0 +1,10 @@
+.vscode/
+*.log
+*.pot
+*.pyc
+.envs
+media/
+env
+venv
+myvenv
+db.sqlite3
