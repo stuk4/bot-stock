@@ -6,7 +6,7 @@ from bot.settings import EMAIL_HOST_USER
 
 from django.core.mail import send_mail
 class MyCronJob(CronJobBase):
-    RUN_EVERY_MINS = 30 # every 1 min
+    RUN_EVERY_MINS = 1 # every 1 min
 
     schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
     code = 'bot.my_cron_job'    # a unique code
