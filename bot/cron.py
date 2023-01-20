@@ -25,6 +25,6 @@ class MyCronJob(CronJobBase):
             message = 'HAY STOOCK MIRA {}'.format(web_pro)
             print("hay stock")
             send_mail(subject, 
-                message, EMAIL_HOST_USER, ['bastididierr@gmail.com'], fail_silently = False)
+                message, EMAIL_HOST_USER, ['<email>@gmail.com'], fail_silently = False)
       
         
