@@ -12,8 +12,8 @@ class MyCronJob(CronJobBase):
     code = 'bot.my_cron_job'    # a unique code
 
     def do(self):
-        web_pro = 'https://www.lenovo.com/cl/es/laptops/laptops-legion/legion-5-series/Legion-5-Pro-16ACH6H/p/88GMY501578'
-        web_test = 'https://www.lenovo.com/cl/es/laptops/thinkpad/serie-t/ThinkPad-T15-G1/p/22TPT15T5N1'
+        web_pro = '<url>'
+        web_test = '<url>'
         req = Request(web_test, headers={'User-Agent': 'Mozilla/5.0'})
         datos = urlopen(req).read()
         soup =  BeautifulSoup(datos,'html.parser')
